@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHAP Explanation</title>
+</head>
+<body>
+    <h1>SHAP Explanation</h1>
+    <form method="post">
+        <label for="text">Enter Text for Explanation:</label>
+        <textarea name="text" rows="5" cols="40" required></textarea>
+        <br />
+        <button type="submit">Explain</button>
+    </form>
+
+    {% if text %}
+        <h2>Explanation for your input:</h2>
+        <img src="{{ url_for('static', filename='shap_plot.png') }}" alt="SHAP Explanation" />
+    {% endif %}
+</body>
+</html>

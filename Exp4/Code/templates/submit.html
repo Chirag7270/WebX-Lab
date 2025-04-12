@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Data</title>
+</head>
+<body>
+    {% if name and age %}
+        <h2>Submission Successful</h2>
+        <p>Name: {{ name }}</p>
+        <p>Age: {{ age }}</p>
+    {% else %}
+        <h2>Submit Your Data</h2>
+        <form method="POST">
+            Name: <input type="text" name="name" required><br>
+            Age: <input type="number" name="age" required><br>
+            <input type="submit" value="Submit">
+        </form>
+    {% endif %}
+</body>
+</html>
