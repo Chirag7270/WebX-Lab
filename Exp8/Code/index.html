@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+  <title>AngularJS Experiment</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.js"></script>
+  <script src="app.js"></script>
+</head>
+<body>
+  <h1>AngularJS Experiment</h1>
+  
+  <!-- Navigation Links -->
+  <ul>
+    <li><a href="#!/binding">One & Two Way Binding</a></li>
+    <li><a href="#!/login">Login Authentication</a></li>
+    <li><a href="#!/book-search">Book Search</a></li>
+  </ul>
+  
+  <!-- Content will load here based on route -->
+  <div ng-view></div>
+</body>
+</html>
